@@ -1,0 +1,9 @@
+.content__cards {
+  margin-bottom: 66px;
+}
+
+@media (max-width: 1023px) {
+  .content__cards {
+    margin-bottom: 48px;
+  }
+}

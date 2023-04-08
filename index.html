@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Место</title>
+  <link rel="stylesheet" href="pages/index.css">
+</head>
+<body class="page">
+  <header class="header page__header centered-block">
+    <img class="header__logo" src="images/header-logo.svg" alt="Логотип страницы">
+  </header>
+
+  <main class="content centered-block">
+    <section class="profile content__profile">
+      <img class="profile__avatar" src="images/avatar.jpg" alt="Аватарка пользователя">
+
+      <div class="profile__info">
+        <div class="profile__header">
+          <h1 class="profile__name">Жак-Ив Кусто</h1>
+          <button class="profile__edit-button hover-opacity"></button>
+        </div>
+        <p class="profile__description">Исследователь океана</p>
+      </div>
+
+      <button class="profile__add-button hover-opacity"></button>
+    </section>
+
+    <section class="content__cards">
+      <ul class="cards">
+        <li class="card">
+          <img class="card__image" src="images/place-baikal.jpg" alt="Озеро Байкал">
+          <div class="card__content">
+            <h2 class="card__title">Озеро Байкал</h2>
+            <button class="card__like-button"></button>
+          </div>
+        </li>
+
+        <li class="card">
+          <img class="card__image" src="images/place-kamchatka.jpg" alt="Камчатка">
+          <div class="card__content">
+            <h2 class="card__title">Камчатка</h2>
+            <button class="card__like-button"></button>
+          </div>
+        </li>
+
+        <li class="card">
+          <img class="card__image" src="images/place-karachaevo-cherkesiya.jpg" alt="Карачаево-Черкесия">
+          <div class="card__content">
+            <h2 class="card__title">Карачаево-Черкесия</h2>
+            <button class="card__like-button"></button>
+          </div>
+        </li>
+
+        <li class="card">
+          <img class="card__image" src="images/place-kizhi.jpg" alt="Кижи">
+          <div class="card__content">
+            <h2 class="card__title">Кижи</h2>
+            <button class="card__like-button"></button>
+          </div>
+        </li>
+
+        <li class="card">
+          <img class="card__image" src="images/place-kurshskaya-kosa.jpg" alt="Куршская коса">
+          <div class="card__content">
+            <h2 class="card__title">Куршская коса</h2>
+            <button class="card__like-button"></button>
+          </div>
+        </li>
+
+        <li class="card">
+          <img class="card__image" src="images/place-lastochkino-gnezdo.jpg" alt="Ласточкино гнездо">
+          <div class="card__content">
+            <h2 class="card__title">Ласточкино гнездо</h2>
+            <button class="card__like-button"></button>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer centered-block">
+    <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
+  </footer>
+
+  <div class="popup">
+    <div class="popup__container">
+      <button class="popup__close-button hover-opacity"></button>
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <form class="form" action="#" method="POST">
+        <input type="text" name="username" placeholder="Имя" class="form__input" required>
+        <input type="text" name="about" placeholder="О себе" class="form__input" required>
+        <button type="submit" class="form__submit-button">Сохранить</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
